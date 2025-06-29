@@ -1,0 +1,5 @@
+import{r,C as g,j as a}from"./index-DYKxKkKE.js";const M="_chatContainer_1dj7x_1",d="_sentMessage_1dj7x_24",l="_topMessage_1dj7x_29",_="_bottomMessage_1dj7x_34",p="_receivedMessage_1dj7x_39",o={chatContainer:M,sentMessage:d,topMessage:l,bottomMessage:_,receivedMessage:p};function C({messages:c,setMessages:i}){const{dataChannel:n}=r.useContext(g);return console.log("The data channel here is",n),n.current.onmessage=s=>{let e=JSON.parse(s.data);console.log(e),e.origin="received",console.log("Message received!"),i(t=>[...t,e])},a.jsx("div",{className:o.chatContainer,children:c.map((s,e,t)=>a.jsx("p",{className:`
+                                            ${s.origin==="sent"?o.sentMessage:o.receivedMessage}
+                                            ${t[e+1]!=null&&t[e+1].origin==s.origin?o.topMessage:""}
+                                            ${t[e-1]!=null&&t[e-1].origin==s.origin?o.bottomMessage:""}
+                                        `,children:s.content},e))})}export{C as default};
