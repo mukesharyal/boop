@@ -8,10 +8,6 @@
     <title>Boop Chat</title>
     <style>
 
-      /* * {
-  outline: 1px solid rgba(255,0,0,0.5);
-} */
-
       html, body, #root{
         background-color: #ffffff;
         margin: 0;
@@ -26,9 +22,17 @@
         user-select: none; 
       }
 
+      img {
+        user-select: none;     /* Prevent text selection */
+        -webkit-user-drag: none; /* Prevent dragging the image in Chrome/Safari */
+        -moz-user-drag: none;    /* Firefox (not widely supported) */
+        -ms-user-drag: none;     /* IE/Edge */
+        pointer-events: auto;   /* Keep clicks functional */
+      }
+
 
     </style>
-    <script type="module" crossorigin src="./assets/index-CkWY4Y1x.js"></script>
+    <script type="module" crossorigin src="./assets/index-DT8xq9-a.js"></script>
   </head>
   <body>
     <div id="root"></div>
