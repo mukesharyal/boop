@@ -8,14 +8,30 @@
     <title>Boop Chat</title>
     <style>
 
+      :root{
+        --opaque-background: #FFFFFF;
+        --glassy-background: #FFFFFFAA;
+        --text-color: #111111;
+        --icon-color: #3BA6AC;
+        --textarea: #CBF1F5;
+      }
+
+      .dark{
+        --opaque-background: #222831;
+        --glassy-background: #222831AA;
+        --text-color: #EEEEEE;
+        --icon-color: #EEEEEE;
+        --textarea: #393E46;
+      }
+
       html, body, #root{
-        background-color: #ffffff;
         margin: 0;
         padding: 0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;             
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: transparent;
-        touch-action: pan-y;
+        touch-action: none;
+        overscroll-behavior-y: contain; /* prevents pull-to-refresh */
       }
 
       button, img, .textMessage{
@@ -32,7 +48,8 @@
 
 
     </style>
-    <script type="module" crossorigin src="./assets/index-DT8xq9-a.js"></script>
+    <script type="module" crossorigin src="./assets/index-CngHVNkC.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C4Ky1Rgz.css">
   </head>
   <body>
     <div id="root"></div>
