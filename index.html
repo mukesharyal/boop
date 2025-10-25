@@ -10,8 +10,21 @@
 
       :root{
         --opaque-background: #F6F6F6;
+        --opaque-background-hover: #EAEAEA;
         --glassy-background: #FFFFFFAA;
         --secondary-background: #DDD7CE;
+        --secondary-background-hover: #C8C2BA;
+        --text-color: #1D1A14;
+        --icon-color: #1D1A14;
+        --extreme-color: #FFFFFF;
+      }
+
+      .light{
+        --opaque-background: #F6F6F6;
+        --opaque-background-hover: #EAEAEA;
+        --glassy-background: #FFFFFFAA;
+        --secondary-background: #DDD7CE;
+        --secondary-background-hover: #C8C2BA;
         --text-color: #1D1A14;
         --icon-color: #1D1A14;
         --extreme-color: #FFFFFF;
@@ -19,8 +32,10 @@
 
       .dark{
         --opaque-background: #222831;
+        --opaque-background-hover: #323A45;
         --glassy-background: #222831AA;
         --secondary-background: #434C5A;
+        --secondary-background-hover: #515B6A;
         --text-color: #EEEEEE;
         --icon-color: #EEEEEE;
         --extreme-color: #1B2027;
@@ -59,9 +74,24 @@
       }
 
 
+      @media (prefers-color-scheme: dark) {
+
+        body {
+          --opaque-background: #222831;
+          --opaque-background-hover: #323A45;
+          --glassy-background: #222831AA;
+          --secondary-background: #434C5A;
+          --secondary-background-hover: #515B6A;
+          --text-color: #EEEEEE;
+          --icon-color: #EEEEEE;
+          --extreme-color: #1B2027;
+        }
+      }
+
+
     </style>
-    <script type="module" crossorigin src="./assets/index-CFjZajDM.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D3wMxXEb.css">
+    <script type="module" crossorigin src="./assets/index-CPhSPsLi.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-zzwXKLfx.css">
   </head>
   <body>
     <div id="root"></div>
